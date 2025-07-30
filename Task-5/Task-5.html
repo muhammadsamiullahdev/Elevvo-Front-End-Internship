@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - Boost Your Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark-mode .text-gray-800 {
+            color: #e2e8f0;
+        }
+
+        .dark-mode .bg-gray-100 {
+            background-color: #4a5568;
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-800 smooth-scroll">
+    <button id="theme-toggle" class="fixed top-4 right-4 p-2 bg-gray-800 text-white rounded-full z-50">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Taskify: Streamline Your Workflow</h1>
+            <p class="text-lg md:text-xl mb-6">The ultimate SaaS tool to manage tasks, collaborate, and boost
+                productivity.</p>
+            <a href="#cta"
+                class="inline-block bg-yellow-400 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-500 transition">Get
+                Started</a>
+        </div>
+    </header>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Taskify?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-tasks text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Task Management</h3>
+                    <p>Organize and prioritize tasks with intuitive drag-and-drop boards.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+                    <p>Real-time collaboration and communication for seamless teamwork.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Analytics</h3>
+                    <p>Track progress and gain insights with powerful analytics tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="italic mb-4">"Taskify transformed our team's productivity. It's intuitive and powerful!"
+                    </p>
+                    <p class="font-semibold">Jane Doe, Project Manager</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="italic mb-4">"The analytics feature helped us optimize our workflow like never before."
+                    </p>
+                    <p class="font-semibold">John Smith, Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Basic</h3>
+                    <p class="text-3xl font-bold mb-4">$9<span class="text-sm">/mo</span></p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>5 Projects</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Basic Analytics</li>
+                    </ul>
+                    <a href="#cta"
+                        class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition">Choose
+                        Plan</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-600">
+                    <h3 class="text-xl font-semibold mb-2">Pro</h3>
+                    <p class="text-3xl font-bold mb-4">$29<span class="text-sm">/mo</span></p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Unlimited Projects</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Advanced Analytics</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Priority Support</li>
+                    </ul>
+                    <a href="#cta"
+                        class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition">Choose
+                        Plan</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+                    <p class="text-3xl font-bold mb-4">$99<span class="text-sm">/mo</span></p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Custom Solutions</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Dedicated Support</li>
+                    </ul>
+                    <a href="#cta"
+                        class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition">Choose
+                        Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Boost Your Productivity?</h2>
+            <p class="text-lg mb-6">Join thousands of teams using Taskify to streamline their workflow.</p>
+            <a href="#"
+                class="inline-block bg-yellow-400 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-500 transition">Start
+                Free Trial</a>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <p>&copy; 2025 Taskify. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
